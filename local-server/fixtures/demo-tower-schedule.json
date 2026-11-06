@@ -1,0 +1,3628 @@
+{
+ "schedule": {
+  "source": "mspdi",
+  "file_name": "demo-tower-schedule.xml",
+  "file_sha256": "9340506188867ac280db0a0e4977e5db2a616ddd55ee9dc0446e52b4de573b7a",
+  "header": {
+   "name": "Demo Tower — G+2 Residential Building",
+   "start_date": "2026-08-03",
+   "finish_date": "2027-03-06",
+   "status_date": "2026-10-24",
+   "minutes_per_day": 480,
+   "minutes_per_week": 2880,
+   "days_per_month": 26,
+   "currency_code": "ETB",
+   "baseline_for_ev": 0,
+   "save_version": "14"
+  },
+  "calendars": [
+   {
+    "uid": 1,
+    "name": "Ethiopian 6-day (Mon–Sat)",
+    "is_base": true,
+    "week": [
+     {
+      "dow": 0,
+      "working": false,
+      "minutes": 0
+     },
+     {
+      "dow": 1,
+      "working": true,
+      "minutes": 480
+     },
+     {
+      "dow": 2,
+      "working": true,
+      "minutes": 480
+     },
+     {
+      "dow": 3,
+      "working": true,
+      "minutes": 480
+     },
+     {
+      "dow": 4,
+      "working": true,
+      "minutes": 480
+     },
+     {
+      "dow": 5,
+      "working": true,
+      "minutes": 480
+     },
+     {
+      "dow": 6,
+      "working": true,
+      "minutes": 480
+     }
+    ],
+    "exceptions": [
+     {
+      "from": "2026-09-11",
+      "to": "2026-09-11",
+      "working": false,
+      "name": "Enkutatash (Ethiopian New Year)"
+     },
+     {
+      "from": "2026-09-27",
+      "to": "2026-09-27",
+      "working": false,
+      "name": "Meskel"
+     },
+     {
+      "from": "2027-01-07",
+      "to": "2027-01-07",
+      "working": false,
+      "name": "Genna (Ethiopian Christmas)"
+     },
+     {
+      "from": "2027-01-19",
+      "to": "2027-01-19",
+      "working": false,
+      "name": "Timket (Epiphany)"
+     },
+     {
+      "from": "2027-03-02",
+      "to": "2027-03-02",
+      "working": false,
+      "name": "Adwa Victory Day"
+     }
+    ]
+   },
+   {
+    "uid": 2,
+    "name": "Standard",
+    "is_base": true,
+    "week": [
+     {
+      "dow": 0,
+      "working": false,
+      "minutes": 0
+     },
+     {
+      "dow": 1,
+      "working": true,
+      "minutes": 480
+     },
+     {
+      "dow": 2,
+      "working": true,
+      "minutes": 480
+     },
+     {
+      "dow": 3,
+      "working": true,
+      "minutes": 480
+     },
+     {
+      "dow": 4,
+      "working": true,
+      "minutes": 480
+     },
+     {
+      "dow": 5,
+      "working": true,
+      "minutes": 480
+     },
+     {
+      "dow": 6,
+      "working": false,
+      "minutes": 0
+     }
+    ],
+    "exceptions": []
+   },
+   {
+    "uid": 3,
+    "name": "Concrete gang",
+    "is_base": false,
+    "base_uid": 1,
+    "week": [
+     {
+      "dow": 0,
+      "working": false,
+      "minutes": 0
+     },
+     {
+      "dow": 1,
+      "working": true,
+      "minutes": 480
+     },
+     {
+      "dow": 2,
+      "working": true,
+      "minutes": 480
+     },
+     {
+      "dow": 3,
+      "working": true,
+      "minutes": 480
+     },
+     {
+      "dow": 4,
+      "working": true,
+      "minutes": 480
+     },
+     {
+      "dow": 5,
+      "working": true,
+      "minutes": 480
+     },
+     {
+      "dow": 6,
+      "working": true,
+      "minutes": 480
+     }
+    ],
+    "exceptions": [
+     {
+      "from": "2026-09-11",
+      "to": "2026-09-11",
+      "working": false,
+      "name": "Enkutatash (Ethiopian New Year)"
+     },
+     {
+      "from": "2026-09-27",
+      "to": "2026-09-27",
+      "working": false,
+      "name": "Meskel"
+     },
+     {
+      "from": "2027-01-07",
+      "to": "2027-01-07",
+      "working": false,
+      "name": "Genna (Ethiopian Christmas)"
+     },
+     {
+      "from": "2027-01-19",
+      "to": "2027-01-19",
+      "working": false,
+      "name": "Timket (Epiphany)"
+     },
+     {
+      "from": "2027-03-02",
+      "to": "2027-03-02",
+      "working": false,
+      "name": "Adwa Victory Day"
+     }
+    ]
+   }
+  ],
+  "project_calendar_uid": 1,
+  "tasks": [
+   {
+    "uid": 1,
+    "guid": "8DF79D0E-CC93-1CF4-F44E-500324DC73ED",
+    "id": 1,
+    "name": "Preliminaries",
+    "wbs": "1",
+    "outline_number": "1",
+    "outline_level": 1,
+    "is_summary": true,
+    "is_milestone": false,
+    "start": "2026-08-03",
+    "finish": "2027-02-13",
+    "duration_days": 165,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 39,
+    "physical_pct": 39,
+    "actual_start": "2026-08-03",
+    "cost": 2180000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-08-03",
+      "finish": "2027-02-13",
+      "duration_days": 165,
+      "cost": 2180000
+     }
+    ],
+    "custom": {}
+   },
+   {
+    "uid": 2,
+    "guid": "54B583E6-FCD4-0D94-B131-1F3F01C6EF46",
+    "id": 2,
+    "name": "Contract signed / Notice to proceed",
+    "wbs": "1.1",
+    "outline_number": "1.1",
+    "outline_level": 2,
+    "parent_uid": 1,
+    "is_summary": false,
+    "is_milestone": true,
+    "start": "2026-08-03",
+    "finish": "2026-08-03",
+    "duration_days": 0,
+    "constraint_type": 2,
+    "constraint_date": "2026-08-03",
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-08-03",
+    "actual_finish": "2026-08-03",
+    "cost": 0,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-08-03",
+      "finish": "2026-08-03",
+      "duration_days": 0,
+      "cost": 0
+     }
+    ],
+    "custom": {}
+   },
+   {
+    "uid": 3,
+    "guid": "C252A53C-16FD-41F2-EEC6-9C495773C413",
+    "id": 3,
+    "name": "Site mobilisation & hoarding",
+    "wbs": "1.2",
+    "outline_number": "1.2",
+    "outline_level": 2,
+    "parent_uid": 1,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-08-03",
+    "finish": "2026-08-08",
+    "duration_days": 6,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-08-03",
+    "actual_finish": "2026-08-08",
+    "cost": 185000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-08-03",
+      "finish": "2026-08-08",
+      "duration_days": 6,
+      "cost": 185000
+     }
+    ],
+    "custom": {
+     "Text1": "1.1.1"
+    },
+    "boq_codes": "1.1.1"
+   },
+   {
+    "uid": 4,
+    "guid": "85FD0520-B4CE-920D-73DC-1875BE2D982D",
+    "id": 4,
+    "name": "Temporary site office, stores & toilets",
+    "wbs": "1.3",
+    "outline_number": "1.3",
+    "outline_level": 2,
+    "parent_uid": 1,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-08-05",
+    "finish": "2026-08-10",
+    "duration_days": 5,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 175,
+    "free_float_days": 175,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-08-05",
+    "actual_finish": "2026-08-10",
+    "cost": 240000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-08-05",
+      "finish": "2026-08-10",
+      "duration_days": 5,
+      "cost": 240000
+     }
+    ],
+    "custom": {
+     "Text1": "1.1.2"
+    },
+    "boq_codes": "1.1.2"
+   },
+   {
+    "uid": 5,
+    "guid": "16A905DF-1238-D160-EDE8-5F7ECACB0100",
+    "id": 5,
+    "name": "Setting out & survey",
+    "wbs": "1.4",
+    "outline_number": "1.4",
+    "outline_level": 2,
+    "parent_uid": 1,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-08-10",
+    "finish": "2026-08-12",
+    "duration_days": 3,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-08-10",
+    "actual_finish": "2026-08-12",
+    "cost": 45000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-08-10",
+      "finish": "2026-08-12",
+      "duration_days": 3,
+      "cost": 45000
+     }
+    ],
+    "custom": {
+     "Text1": "1.1.3"
+    },
+    "boq_codes": "1.1.3"
+   },
+   {
+    "uid": 6,
+    "guid": "3C840B0F-AFEE-81BA-B6F7-106D18881631",
+    "id": 6,
+    "name": "Site overheads & supervision",
+    "wbs": "1.5",
+    "outline_number": "1.5",
+    "outline_level": 2,
+    "parent_uid": 1,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-08-03",
+    "finish": "2027-02-13",
+    "duration_days": 165,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 17,
+    "free_float_days": 17,
+    "pct_complete": 33,
+    "physical_pct": 33,
+    "actual_start": "2026-08-03",
+    "cost": 1650000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-08-03",
+      "finish": "2027-02-13",
+      "duration_days": 165,
+      "cost": 1650000
+     }
+    ],
+    "custom": {
+     "Text1": "1.2.1"
+    },
+    "boq_codes": "1.2.1",
+    "notes": "Level of effort: site manager, foreman, store keeper, guards."
+   },
+   {
+    "uid": 7,
+    "guid": "B8147F2B-4621-AC26-5047-29D3D5B67771",
+    "id": 7,
+    "name": "Mobilise concrete mixer & vibrators",
+    "wbs": "1.6",
+    "outline_number": "1.6",
+    "outline_level": 2,
+    "parent_uid": 1,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-08-10",
+    "finish": "2026-08-11",
+    "duration_days": 2,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 1,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-08-10",
+    "actual_finish": "2026-08-11",
+    "cost": 60000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-08-10",
+      "finish": "2026-08-11",
+      "duration_days": 2,
+      "cost": 60000
+     }
+    ],
+    "custom": {
+     "Text1": "1.1.4"
+    },
+    "boq_codes": "1.1.4"
+   },
+   {
+    "uid": 10,
+    "guid": "28768126-FB9D-D8B5-3857-95460B03D20B",
+    "id": 8,
+    "name": "Substructure",
+    "wbs": "2",
+    "outline_number": "2",
+    "outline_level": 1,
+    "is_summary": true,
+    "is_milestone": false,
+    "start": "2026-08-13",
+    "finish": "2026-09-26",
+    "duration_days": 38,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-08-13",
+    "actual_finish": "2026-09-26",
+    "cost": 2602000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-08-13",
+      "finish": "2026-09-24",
+      "duration_days": 36,
+      "cost": 2602000
+     }
+    ],
+    "custom": {}
+   },
+   {
+    "uid": 11,
+    "guid": "B960D74A-BE60-8405-8AF4-189351CEEFF1",
+    "id": 9,
+    "name": "Bulk excavation to formation level",
+    "wbs": "2.1",
+    "outline_number": "2.1",
+    "outline_level": 2,
+    "parent_uid": 10,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-08-13",
+    "finish": "2026-08-21",
+    "duration_days": 8,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-08-13",
+    "actual_finish": "2026-08-21",
+    "cost": 420000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-08-13",
+      "finish": "2026-08-19",
+      "duration_days": 6,
+      "cost": 420000
+     }
+    ],
+    "custom": {
+     "Text1": "2.1.1"
+    },
+    "boq_codes": "2.1.1"
+   },
+   {
+    "uid": 12,
+    "guid": "122EB433-69A2-EBA9-4338-3E3D4B32782B",
+    "id": 10,
+    "name": "Trench excavation for grade beams",
+    "wbs": "2.2",
+    "outline_number": "2.2",
+    "outline_level": 2,
+    "parent_uid": 10,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-08-18",
+    "finish": "2026-08-21",
+    "duration_days": 4,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 6,
+    "free_float_days": 11,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-08-18",
+    "actual_finish": "2026-08-21",
+    "cost": 96000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-08-18",
+      "finish": "2026-08-21",
+      "duration_days": 4,
+      "cost": 96000
+     }
+    ],
+    "custom": {
+     "Text1": "2.1.2"
+    },
+    "boq_codes": "2.1.2"
+   },
+   {
+    "uid": 13,
+    "guid": "9493DC3F-3068-F5D8-1448-3BD93B3EFA00",
+    "id": 11,
+    "name": "Anti-termite soil treatment",
+    "wbs": "2.3",
+    "outline_number": "2.3",
+    "outline_level": 2,
+    "parent_uid": 10,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-08-22",
+    "finish": "2026-08-22",
+    "duration_days": 1,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-08-22",
+    "actual_finish": "2026-08-22",
+    "cost": 38000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-08-20",
+      "finish": "2026-08-20",
+      "duration_days": 1,
+      "cost": 38000
+     }
+    ],
+    "custom": {
+     "Text1": "2.1.3"
+    },
+    "boq_codes": "2.1.3"
+   },
+   {
+    "uid": 14,
+    "guid": "2B3C1CFE-AA2A-E523-2845-841101290E9C",
+    "id": 12,
+    "name": "Blinding concrete C-15, 50 mm",
+    "wbs": "2.4",
+    "outline_number": "2.4",
+    "outline_level": 2,
+    "parent_uid": 10,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-08-24",
+    "finish": "2026-08-26",
+    "duration_days": 3,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-08-24",
+    "actual_finish": "2026-08-26",
+    "cost": 130000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-08-21",
+      "finish": "2026-08-24",
+      "duration_days": 3,
+      "cost": 130000
+     }
+    ],
+    "custom": {
+     "Text1": "2.2.1"
+    },
+    "boq_codes": "2.2.1"
+   },
+   {
+    "uid": 15,
+    "guid": "7E93E033-456D-C78E-8D15-0AC0880C0D36",
+    "id": 13,
+    "name": "Footings",
+    "wbs": "2.5",
+    "outline_number": "2.5",
+    "outline_level": 2,
+    "parent_uid": 10,
+    "is_summary": true,
+    "is_milestone": false,
+    "start": "2026-08-27",
+    "finish": "2026-09-03",
+    "duration_days": 7,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-08-27",
+    "actual_finish": "2026-09-03",
+    "cost": 840000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-08-25",
+      "finish": "2026-09-01",
+      "duration_days": 7,
+      "cost": 840000
+     }
+    ],
+    "custom": {}
+   },
+   {
+    "uid": 16,
+    "guid": "08DC83C9-A4A9-CA71-9B5F-C0F077D2844F",
+    "id": 14,
+    "name": "Footing F1 — rebar, formwork & pour",
+    "wbs": "2.5.1",
+    "outline_number": "2.5.1",
+    "outline_level": 3,
+    "parent_uid": 15,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-08-27",
+    "finish": "2026-08-31",
+    "duration_days": 4,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-08-27",
+    "actual_finish": "2026-08-31",
+    "cost": 210000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-08-25",
+      "finish": "2026-08-28",
+      "duration_days": 4,
+      "cost": 210000
+     }
+    ],
+    "custom": {
+     "Text1": "2.3.1",
+     "Text2": "F1"
+    },
+    "boq_codes": "2.3.1",
+    "element_codes": "F1"
+   },
+   {
+    "uid": 17,
+    "guid": "D1922303-8025-1065-59F9-21A35F83FC61",
+    "id": 15,
+    "name": "Footing F2 — rebar, formwork & pour",
+    "wbs": "2.5.2",
+    "outline_number": "2.5.2",
+    "outline_level": 3,
+    "parent_uid": 15,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-08-28",
+    "finish": "2026-09-01",
+    "duration_days": 4,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-08-28",
+    "actual_finish": "2026-09-01",
+    "cost": 210000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-08-26",
+      "finish": "2026-08-29",
+      "duration_days": 4,
+      "cost": 210000
+     }
+    ],
+    "custom": {
+     "Text1": "2.3.1",
+     "Text2": "F2"
+    },
+    "boq_codes": "2.3.1",
+    "element_codes": "F2"
+   },
+   {
+    "uid": 18,
+    "guid": "C1AA13E9-3D11-8029-454F-77BC0C62DFEB",
+    "id": 16,
+    "name": "Footing F3 — rebar, formwork & pour",
+    "wbs": "2.5.3",
+    "outline_number": "2.5.3",
+    "outline_level": 3,
+    "parent_uid": 15,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-08-29",
+    "finish": "2026-09-02",
+    "duration_days": 4,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-08-29",
+    "actual_finish": "2026-09-02",
+    "cost": 210000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-08-27",
+      "finish": "2026-08-31",
+      "duration_days": 4,
+      "cost": 210000
+     }
+    ],
+    "custom": {
+     "Text1": "2.3.1",
+     "Text2": "F3"
+    },
+    "boq_codes": "2.3.1",
+    "element_codes": "F3"
+   },
+   {
+    "uid": 19,
+    "guid": "A84E4B1B-0F0C-DCAB-D672-5625594C3275",
+    "id": 17,
+    "name": "Footing F4 — rebar, formwork & pour",
+    "wbs": "2.5.4",
+    "outline_number": "2.5.4",
+    "outline_level": 3,
+    "parent_uid": 15,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-08-31",
+    "finish": "2026-09-03",
+    "duration_days": 4,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-08-31",
+    "actual_finish": "2026-09-03",
+    "cost": 210000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-08-28",
+      "finish": "2026-09-01",
+      "duration_days": 4,
+      "cost": 210000
+     }
+    ],
+    "custom": {
+     "Text1": "2.3.1",
+     "Text2": "F4"
+    },
+    "boq_codes": "2.3.1",
+    "element_codes": "F4"
+   },
+   {
+    "uid": 20,
+    "guid": "981F35B2-70C8-F116-9454-B8880C4E5923",
+    "id": 18,
+    "name": "Grade beams GB1–GB4",
+    "wbs": "2.6",
+    "outline_number": "2.6",
+    "outline_level": 2,
+    "parent_uid": 10,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-09-04",
+    "finish": "2026-09-10",
+    "duration_days": 6,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-09-04",
+    "actual_finish": "2026-09-10",
+    "cost": 365000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-09-02",
+      "finish": "2026-09-08",
+      "duration_days": 6,
+      "cost": 365000
+     }
+    ],
+    "custom": {
+     "Text1": "2.4.1",
+     "Text2": "GB1;GB2;GB3;GB4"
+    },
+    "boq_codes": "2.4.1",
+    "element_codes": "GB1;GB2;GB3;GB4"
+   },
+   {
+    "uid": 21,
+    "guid": "10D0BEE5-D5E9-BFE0-C8C4-AE0C8874415C",
+    "id": 19,
+    "name": "Column stubs to plinth level",
+    "wbs": "2.7",
+    "outline_number": "2.7",
+    "outline_level": 2,
+    "parent_uid": 10,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-09-07",
+    "finish": "2026-09-09",
+    "duration_days": 3,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 8,
+    "free_float_days": 13,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-09-07",
+    "actual_finish": "2026-09-09",
+    "cost": 88000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-09-04",
+      "finish": "2026-09-07",
+      "duration_days": 3,
+      "cost": 88000
+     }
+    ],
+    "custom": {
+     "Text1": "2.4.2"
+    },
+    "boq_codes": "2.4.2"
+   },
+   {
+    "uid": 22,
+    "guid": "823BA5DF-B66D-8239-5C59-D762861DBBBC",
+    "id": 20,
+    "name": "Backfill & compaction in layers",
+    "wbs": "2.8",
+    "outline_number": "2.8",
+    "outline_level": 2,
+    "parent_uid": 10,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-09-15",
+    "finish": "2026-09-19",
+    "duration_days": 5,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-09-15",
+    "actual_finish": "2026-09-19",
+    "cost": 140000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-09-12",
+      "finish": "2026-09-17",
+      "duration_days": 5,
+      "cost": 140000
+     }
+    ],
+    "custom": {
+     "Text1": "2.5.1"
+    },
+    "boq_codes": "2.5.1"
+   },
+   {
+    "uid": 23,
+    "guid": "5AE0607A-F4A7-B045-B340-85A37C24D155",
+    "id": 21,
+    "name": "Hardcore, DPM & ground slab on grade",
+    "wbs": "2.9",
+    "outline_number": "2.9",
+    "outline_level": 2,
+    "parent_uid": 10,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-09-21",
+    "finish": "2026-09-25",
+    "duration_days": 5,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-09-21",
+    "actual_finish": "2026-09-25",
+    "cost": 310000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-09-18",
+      "finish": "2026-09-23",
+      "duration_days": 5,
+      "cost": 310000
+     }
+    ],
+    "custom": {
+     "Text1": "2.6.1"
+    },
+    "boq_codes": "2.6.1"
+   },
+   {
+    "uid": 24,
+    "guid": "8B398CEE-21EF-6E8E-9BCC-1BA247BD9B3B",
+    "id": 22,
+    "name": "Sewer line & manholes",
+    "wbs": "2.10",
+    "outline_number": "2.10",
+    "outline_level": 2,
+    "parent_uid": 10,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-09-21",
+    "finish": "2026-09-26",
+    "duration_days": 6,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 135,
+    "free_float_days": 135,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-09-21",
+    "actual_finish": "2026-09-26",
+    "cost": 175000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-09-18",
+      "finish": "2026-09-24",
+      "duration_days": 6,
+      "cost": 175000
+     }
+    ],
+    "custom": {
+     "Text1": "6.2.2"
+    },
+    "boq_codes": "6.2.2"
+   },
+   {
+    "uid": 25,
+    "guid": "2D41F3FA-0C6A-9517-7BAA-D46F723CBEF3",
+    "id": 23,
+    "name": "Substructure complete",
+    "wbs": "2.11",
+    "outline_number": "2.11",
+    "outline_level": 2,
+    "parent_uid": 10,
+    "is_summary": false,
+    "is_milestone": true,
+    "start": "2026-09-25",
+    "finish": "2026-09-25",
+    "duration_days": 0,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-09-25",
+    "actual_finish": "2026-09-25",
+    "cost": 0,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-09-23",
+      "finish": "2026-09-23",
+      "duration_days": 0,
+      "cost": 0
+     }
+    ],
+    "custom": {}
+   },
+   {
+    "uid": 30,
+    "guid": "5E704151-E9CD-38E6-C012-CF140D2A1C0D",
+    "id": 24,
+    "name": "Superstructure — Level 1",
+    "wbs": "3",
+    "outline_number": "3",
+    "outline_level": 1,
+    "is_summary": true,
+    "is_milestone": false,
+    "start": "2026-09-26",
+    "finish": "2026-10-26",
+    "duration_days": 26,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 97,
+    "physical_pct": 97,
+    "actual_start": "2026-09-26",
+    "cost": 1787000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-09-24",
+      "finish": "2026-10-23",
+      "duration_days": 26,
+      "cost": 1747000
+     }
+    ],
+    "custom": {}
+   },
+   {
+    "uid": 31,
+    "guid": "4B3317A6-4CF3-86F7-24B6-6B0D3F15440C",
+    "id": 25,
+    "name": "Columns L1",
+    "wbs": "3.1",
+    "outline_number": "3.1",
+    "outline_level": 2,
+    "parent_uid": 30,
+    "is_summary": true,
+    "is_milestone": false,
+    "start": "2026-09-26",
+    "finish": "2026-10-05",
+    "duration_days": 8,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-09-26",
+    "actual_finish": "2026-10-05",
+    "cost": 372000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-09-24",
+      "finish": "2026-10-02",
+      "duration_days": 8,
+      "cost": 372000
+     }
+    ],
+    "custom": {}
+   },
+   {
+    "uid": 32,
+    "guid": "81DE36B6-9A20-E6D3-752B-308D0AD6B506",
+    "id": 26,
+    "name": "Column C1 — rebar, formwork & pour",
+    "wbs": "3.1.1",
+    "outline_number": "3.1.1",
+    "outline_level": 3,
+    "parent_uid": 31,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-09-26",
+    "finish": "2026-09-29",
+    "duration_days": 3,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-09-26",
+    "actual_finish": "2026-09-29",
+    "cost": 62000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-09-24",
+      "finish": "2026-09-26",
+      "duration_days": 3,
+      "cost": 62000
+     }
+    ],
+    "custom": {
+     "Text1": "3.1.1",
+     "Text2": "C1"
+    },
+    "boq_codes": "3.1.1",
+    "element_codes": "C1"
+   },
+   {
+    "uid": 33,
+    "guid": "1B015109-B910-1CC8-3036-76E9466DD1D9",
+    "id": 27,
+    "name": "Column C2 — rebar, formwork & pour",
+    "wbs": "3.1.2",
+    "outline_number": "3.1.2",
+    "outline_level": 3,
+    "parent_uid": 31,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-09-28",
+    "finish": "2026-09-30",
+    "duration_days": 3,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-09-28",
+    "actual_finish": "2026-09-30",
+    "cost": 62000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-09-25",
+      "finish": "2026-09-28",
+      "duration_days": 3,
+      "cost": 62000
+     }
+    ],
+    "custom": {
+     "Text1": "3.1.1",
+     "Text2": "C2"
+    },
+    "boq_codes": "3.1.1",
+    "element_codes": "C2"
+   },
+   {
+    "uid": 34,
+    "guid": "03D547F5-52C9-9531-C938-933F35E765CD",
+    "id": 28,
+    "name": "Column C3 — rebar, formwork & pour",
+    "wbs": "3.1.3",
+    "outline_number": "3.1.3",
+    "outline_level": 3,
+    "parent_uid": 31,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-09-29",
+    "finish": "2026-10-01",
+    "duration_days": 3,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-09-29",
+    "actual_finish": "2026-10-01",
+    "cost": 62000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-09-26",
+      "finish": "2026-09-29",
+      "duration_days": 3,
+      "cost": 62000
+     }
+    ],
+    "custom": {
+     "Text1": "3.1.1",
+     "Text2": "C3"
+    },
+    "boq_codes": "3.1.1",
+    "element_codes": "C3"
+   },
+   {
+    "uid": 35,
+    "guid": "5D4AA768-6143-BA29-B9D4-4C108C42BF63",
+    "id": 29,
+    "name": "Column C4 — rebar, formwork & pour",
+    "wbs": "3.1.4",
+    "outline_number": "3.1.4",
+    "outline_level": 3,
+    "parent_uid": 31,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-09-30",
+    "finish": "2026-10-02",
+    "duration_days": 3,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-09-30",
+    "actual_finish": "2026-10-02",
+    "cost": 62000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-09-28",
+      "finish": "2026-09-30",
+      "duration_days": 3,
+      "cost": 62000
+     }
+    ],
+    "custom": {
+     "Text1": "3.1.1",
+     "Text2": "C4"
+    },
+    "boq_codes": "3.1.1",
+    "element_codes": "C4"
+   },
+   {
+    "uid": 36,
+    "guid": "052F48BF-F507-C182-B50E-409FF1418737",
+    "id": 30,
+    "name": "Column C5 — rebar, formwork & pour",
+    "wbs": "3.1.5",
+    "outline_number": "3.1.5",
+    "outline_level": 3,
+    "parent_uid": 31,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-10-01",
+    "finish": "2026-10-03",
+    "duration_days": 3,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-10-01",
+    "actual_finish": "2026-10-03",
+    "cost": 62000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-09-29",
+      "finish": "2026-10-01",
+      "duration_days": 3,
+      "cost": 62000
+     }
+    ],
+    "custom": {
+     "Text1": "3.1.1",
+     "Text2": "C5"
+    },
+    "boq_codes": "3.1.1",
+    "element_codes": "C5"
+   },
+   {
+    "uid": 37,
+    "guid": "FE6D588D-4A5A-FC98-5E33-64043BD5B7D5",
+    "id": 31,
+    "name": "Column C6 — rebar, formwork & pour",
+    "wbs": "3.1.6",
+    "outline_number": "3.1.6",
+    "outline_level": 3,
+    "parent_uid": 31,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-10-02",
+    "finish": "2026-10-05",
+    "duration_days": 3,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-10-02",
+    "actual_finish": "2026-10-05",
+    "cost": 62000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-09-30",
+      "finish": "2026-10-02",
+      "duration_days": 3,
+      "cost": 62000
+     }
+    ],
+    "custom": {
+     "Text1": "3.1.1",
+     "Text2": "C6"
+    },
+    "boq_codes": "3.1.1",
+    "element_codes": "C6"
+   },
+   {
+    "uid": 38,
+    "guid": "937C12AF-8A31-43F5-2833-4D568C6F5219",
+    "id": 32,
+    "name": "Beam B1 — formwork, rebar & pour",
+    "wbs": "3.2",
+    "outline_number": "3.2",
+    "outline_level": 2,
+    "parent_uid": 30,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-10-06",
+    "finish": "2026-10-13",
+    "duration_days": 7,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-10-06",
+    "actual_finish": "2026-10-13",
+    "cost": 190000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-10-03",
+      "finish": "2026-10-10",
+      "duration_days": 7,
+      "cost": 190000
+     }
+    ],
+    "custom": {
+     "Text1": "3.2.1",
+     "Text2": "B1"
+    },
+    "boq_codes": "3.2.1",
+    "element_codes": "B1"
+   },
+   {
+    "uid": 39,
+    "guid": "AD6BA545-DDCF-27A0-6D3B-51808C450893",
+    "id": 33,
+    "name": "Slab S1 — formwork & rebar",
+    "wbs": "3.3",
+    "outline_number": "3.3",
+    "outline_level": 2,
+    "parent_uid": 30,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-10-09",
+    "finish": "2026-10-20",
+    "duration_days": 10,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-10-09",
+    "actual_finish": "2026-10-20",
+    "cost": 520000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-10-07",
+      "finish": "2026-10-17",
+      "duration_days": 10,
+      "cost": 480000
+     }
+    ],
+    "custom": {
+     "Text1": "3.3.1",
+     "Text2": "S1"
+    },
+    "boq_codes": "3.3.1",
+    "element_codes": "S1"
+   },
+   {
+    "uid": 40,
+    "guid": "B015897B-AAED-25DF-ED56-87739D578BE3",
+    "id": 34,
+    "name": "Slab S1 — concrete pour & curing",
+    "wbs": "3.4",
+    "outline_number": "3.4",
+    "outline_level": 2,
+    "parent_uid": 30,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-10-21",
+    "finish": "2026-10-23",
+    "duration_days": 3,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 100,
+    "physical_pct": 100,
+    "actual_start": "2026-10-21",
+    "actual_finish": "2026-10-23",
+    "cost": 610000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-10-19",
+      "finish": "2026-10-21",
+      "duration_days": 3,
+      "cost": 610000
+     }
+    ],
+    "custom": {
+     "Text1": "3.3.2",
+     "Text2": "S1"
+    },
+    "boq_codes": "3.3.2",
+    "element_codes": "S1",
+    "notes": "Pour in one continuous operation; ready-mix C-25 from batching plant. Cure 7 days min."
+   },
+   {
+    "uid": 41,
+    "guid": "5A9E56C6-B09E-566C-9F29-C80DE854EFC7",
+    "id": 35,
+    "name": "Staircase GF–L1",
+    "wbs": "3.5",
+    "outline_number": "3.5",
+    "outline_level": 2,
+    "parent_uid": 30,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-10-22",
+    "finish": "2026-10-26",
+    "duration_days": 4,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 20,
+    "free_float_days": 0,
+    "pct_complete": 65,
+    "physical_pct": 65,
+    "actual_start": "2026-10-22",
+    "cost": 95000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-10-20",
+      "finish": "2026-10-23",
+      "duration_days": 4,
+      "cost": 95000
+     }
+    ],
+    "custom": {
+     "Text1": "3.4.1"
+    },
+    "boq_codes": "3.4.1"
+   },
+   {
+    "uid": 42,
+    "guid": "2719D1F6-1807-188B-F779-1FD045215345",
+    "id": 36,
+    "name": "L1 frame complete",
+    "wbs": "3.6",
+    "outline_number": "3.6",
+    "outline_level": 2,
+    "parent_uid": 30,
+    "is_summary": false,
+    "is_milestone": true,
+    "start": "2026-10-26",
+    "finish": "2026-10-26",
+    "duration_days": 0,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 20,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 0,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-10-23",
+      "finish": "2026-10-23",
+      "duration_days": 0,
+      "cost": 0
+     }
+    ],
+    "custom": {}
+   },
+   {
+    "uid": 50,
+    "guid": "B35D5DBE-4E3E-7A65-9F75-62120A5D304B",
+    "id": 37,
+    "name": "Superstructure — Level 2 & Roof",
+    "wbs": "4",
+    "outline_number": "4",
+    "outline_level": 1,
+    "is_summary": true,
+    "is_milestone": false,
+    "start": "2026-11-02",
+    "finish": "2026-12-11",
+    "duration_days": 35,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": -5,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 1997000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-10-30",
+      "finish": "2026-12-09",
+      "duration_days": 35,
+      "cost": 1997000
+     }
+    ],
+    "custom": {}
+   },
+   {
+    "uid": 51,
+    "guid": "DB331345-169C-5305-2C58-294DA985C3FE",
+    "id": 38,
+    "name": "L2 columns (6 nr) — rebar, formwork & pour",
+    "wbs": "4.1",
+    "outline_number": "4.1",
+    "outline_level": 2,
+    "parent_uid": 50,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-11-02",
+    "finish": "2026-11-10",
+    "duration_days": 8,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": -5,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 372000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-10-30",
+      "finish": "2026-11-07",
+      "duration_days": 8,
+      "cost": 372000
+     }
+    ],
+    "custom": {
+     "Text1": "4.1.1"
+    },
+    "boq_codes": "4.1.1"
+   },
+   {
+    "uid": 52,
+    "guid": "7415E0D6-9F7D-D880-5065-D0C633D02073",
+    "id": 39,
+    "name": "L2 beams",
+    "wbs": "4.2",
+    "outline_number": "4.2",
+    "outline_level": 2,
+    "parent_uid": 50,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-11-11",
+    "finish": "2026-11-17",
+    "duration_days": 6,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": -5,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 190000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-11-09",
+      "finish": "2026-11-14",
+      "duration_days": 6,
+      "cost": 190000
+     }
+    ],
+    "custom": {
+     "Text1": "4.2.1"
+    },
+    "boq_codes": "4.2.1"
+   },
+   {
+    "uid": 53,
+    "guid": "4D94A245-B6C1-48F9-C496-1DA642BC5385",
+    "id": 40,
+    "name": "L2 roof slab — formwork & rebar",
+    "wbs": "4.3",
+    "outline_number": "4.3",
+    "outline_level": 2,
+    "parent_uid": 50,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-11-14",
+    "finish": "2026-11-23",
+    "duration_days": 8,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": -5,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 520000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-11-12",
+      "finish": "2026-11-20",
+      "duration_days": 8,
+      "cost": 520000
+     }
+    ],
+    "custom": {
+     "Text1": "4.3.1"
+    },
+    "boq_codes": "4.3.1"
+   },
+   {
+    "uid": 54,
+    "guid": "9EAA8493-BA64-CE45-9050-CEA29C4828AE",
+    "id": 41,
+    "name": "L2 roof slab — concrete pour & curing",
+    "wbs": "4.4",
+    "outline_number": "4.4",
+    "outline_level": 2,
+    "parent_uid": 50,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-11-24",
+    "finish": "2026-11-26",
+    "duration_days": 3,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": -5,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 610000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-11-21",
+      "finish": "2026-11-24",
+      "duration_days": 3,
+      "cost": 610000
+     }
+    ],
+    "custom": {
+     "Text1": "4.3.2"
+    },
+    "boq_codes": "4.3.2"
+   },
+   {
+    "uid": 55,
+    "guid": "3DCFFC29-7E3E-5823-E696-655DAE6D226F",
+    "id": 42,
+    "name": "Staircase L1–L2 & parapet walls",
+    "wbs": "4.5",
+    "outline_number": "4.5",
+    "outline_level": 2,
+    "parent_uid": 50,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-11-27",
+    "finish": "2026-12-03",
+    "duration_days": 6,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": -5,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 160000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-11-25",
+      "finish": "2026-12-01",
+      "duration_days": 6,
+      "cost": 160000
+     }
+    ],
+    "custom": {
+     "Text1": "4.4.1"
+    },
+    "boq_codes": "4.4.1"
+   },
+   {
+    "uid": 56,
+    "guid": "B3C1847A-21F9-6039-A672-A23FB38DA088",
+    "id": 43,
+    "name": "Roof waterproofing membrane",
+    "wbs": "4.6",
+    "outline_number": "4.6",
+    "outline_level": 2,
+    "parent_uid": 50,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-12-08",
+    "finish": "2026-12-11",
+    "duration_days": 4,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 53,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 145000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-12-05",
+      "finish": "2026-12-09",
+      "duration_days": 4,
+      "cost": 145000
+     }
+    ],
+    "custom": {
+     "Text1": "4.5.1"
+    },
+    "boq_codes": "4.5.1"
+   },
+   {
+    "uid": 57,
+    "guid": "6BD16C1A-6141-76B8-54F0-B3D4ABB4322C",
+    "id": 44,
+    "name": "Structural frame complete",
+    "wbs": "4.7",
+    "outline_number": "4.7",
+    "outline_level": 2,
+    "parent_uid": 50,
+    "is_summary": false,
+    "is_milestone": true,
+    "start": "2026-12-03",
+    "finish": "2026-12-03",
+    "duration_days": 0,
+    "constraint_type": 7,
+    "constraint_date": "2026-11-27",
+    "critical": true,
+    "total_float_days": -5,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 0,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-12-01",
+      "finish": "2026-12-01",
+      "duration_days": 0,
+      "cost": 0
+     }
+    ],
+    "custom": {}
+   },
+   {
+    "uid": 60,
+    "guid": "23CF3164-346F-C194-D14D-A312E952DF65",
+    "id": 45,
+    "name": "Masonry",
+    "wbs": "5",
+    "outline_number": "5",
+    "outline_level": 1,
+    "is_summary": true,
+    "is_milestone": false,
+    "start": "2026-10-30",
+    "finish": "2026-12-19",
+    "duration_days": 44,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 1000000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-10-28",
+      "finish": "2026-12-17",
+      "duration_days": 44,
+      "cost": 1000000
+     }
+    ],
+    "custom": {}
+   },
+   {
+    "uid": 61,
+    "guid": "5ABC70FE-5C7C-809F-649F-05DCC007FC79",
+    "id": 46,
+    "name": "Wall W1 — HCB external walls L1",
+    "wbs": "5.1",
+    "outline_number": "5.1",
+    "outline_level": 2,
+    "parent_uid": 60,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-10-30",
+    "finish": "2026-11-10",
+    "duration_days": 10,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 20,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 280000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-10-28",
+      "finish": "2026-11-07",
+      "duration_days": 10,
+      "cost": 280000
+     }
+    ],
+    "custom": {
+     "Text1": "5.1.1",
+     "Text2": "W1"
+    },
+    "boq_codes": "5.1.1",
+    "element_codes": "W1"
+   },
+   {
+    "uid": 62,
+    "guid": "4514ECB5-E0F7-F2B3-398B-B61643071FA5",
+    "id": 47,
+    "name": "HCB internal partitions L1",
+    "wbs": "5.2",
+    "outline_number": "5.2",
+    "outline_level": 2,
+    "parent_uid": 60,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-11-04",
+    "finish": "2026-11-12",
+    "duration_days": 8,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 95,
+    "free_float_days": 95,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 190000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-11-02",
+      "finish": "2026-11-10",
+      "duration_days": 8,
+      "cost": 190000
+     }
+    ],
+    "custom": {
+     "Text1": "5.1.2"
+    },
+    "boq_codes": "5.1.2"
+   },
+   {
+    "uid": 63,
+    "guid": "8E12CE86-F1E0-F465-DEB8-71D69D340D3D",
+    "id": 48,
+    "name": "HCB external walls & partitions L2",
+    "wbs": "5.3",
+    "outline_number": "5.3",
+    "outline_level": 2,
+    "parent_uid": 60,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-12-04",
+    "finish": "2026-12-17",
+    "duration_days": 12,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 410000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-12-02",
+      "finish": "2026-12-15",
+      "duration_days": 12,
+      "cost": 410000
+     }
+    ],
+    "custom": {
+     "Text1": "5.2.1"
+    },
+    "boq_codes": "5.2.1"
+   },
+   {
+    "uid": 64,
+    "guid": "E000E6D3-894B-DDE5-656F-BAC9F0703BF0",
+    "id": 49,
+    "name": "Lintels, sills & stiffener columns",
+    "wbs": "5.4",
+    "outline_number": "5.4",
+    "outline_level": 2,
+    "parent_uid": 60,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-12-14",
+    "finish": "2026-12-19",
+    "duration_days": 6,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 120000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-12-11",
+      "finish": "2026-12-17",
+      "duration_days": 6,
+      "cost": 120000
+     }
+    ],
+    "custom": {
+     "Text1": "5.3.1"
+    },
+    "boq_codes": "5.3.1"
+   },
+   {
+    "uid": 70,
+    "guid": "086DBD23-7A6A-25CC-D974-17F6968A76F3",
+    "id": 50,
+    "name": "MEP",
+    "wbs": "6",
+    "outline_number": "6",
+    "outline_level": 1,
+    "is_summary": true,
+    "is_milestone": false,
+    "start": "2026-11-02",
+    "finish": "2027-02-18",
+    "duration_days": 92,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 1,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 1785000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-10-30",
+      "finish": "2027-02-16",
+      "duration_days": 92,
+      "cost": 1785000
+     }
+    ],
+    "custom": {}
+   },
+   {
+    "uid": 71,
+    "guid": "713FB73E-11D2-6203-8BDE-12E2FFD708D1",
+    "id": 51,
+    "name": "Electrical conduits & boxes",
+    "wbs": "6.1",
+    "outline_number": "6.1",
+    "outline_level": 2,
+    "parent_uid": 70,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-11-02",
+    "finish": "2026-11-18",
+    "duration_days": 15,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 46,
+    "free_float_days": 45,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 230000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-10-30",
+      "finish": "2026-11-16",
+      "duration_days": 15,
+      "cost": 230000
+     }
+    ],
+    "custom": {
+     "Text1": "6.1.1"
+    },
+    "boq_codes": "6.1.1"
+   },
+   {
+    "uid": 72,
+    "guid": "E874969D-A4CB-3254-C921-2FE6BAC426EF",
+    "id": 52,
+    "name": "Plumbing rough-in & sleeves",
+    "wbs": "6.2",
+    "outline_number": "6.2",
+    "outline_level": 2,
+    "parent_uid": 70,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-11-03",
+    "finish": "2026-11-16",
+    "duration_days": 12,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 29,
+    "free_float_days": 29,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 260000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-10-31",
+      "finish": "2026-11-13",
+      "duration_days": 12,
+      "cost": 260000
+     }
+    ],
+    "custom": {
+     "Text1": "6.2.1"
+    },
+    "boq_codes": "6.2.1"
+   },
+   {
+    "uid": 73,
+    "guid": "2CE88F40-7DCC-3106-ED23-5BBBAD87724D",
+    "id": 53,
+    "name": "Earthing & lightning protection",
+    "wbs": "6.3",
+    "outline_number": "6.3",
+    "outline_level": 2,
+    "parent_uid": 70,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-12-12",
+    "finish": "2026-12-15",
+    "duration_days": 3,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 67,
+    "free_float_days": 67,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 85000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-12-10",
+      "finish": "2026-12-12",
+      "duration_days": 3,
+      "cost": 85000
+     }
+    ],
+    "custom": {
+     "Text1": "6.1.4"
+    },
+    "boq_codes": "6.1.4"
+   },
+   {
+    "uid": 74,
+    "guid": "1F9C9552-F6A3-6F75-B0FB-6FBD692118EC",
+    "id": 54,
+    "name": "Wiring & cable pulling",
+    "wbs": "6.4",
+    "outline_number": "6.4",
+    "outline_level": 2,
+    "parent_uid": 70,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2027-01-12",
+    "finish": "2027-01-23",
+    "duration_days": 10,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 1,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 210000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2027-01-09",
+      "finish": "2027-01-21",
+      "duration_days": 10,
+      "cost": 210000
+     }
+    ],
+    "custom": {
+     "Text1": "6.1.2"
+    },
+    "boq_codes": "6.1.2"
+   },
+   {
+    "uid": 75,
+    "guid": "E67A744A-9B0C-8AAA-9A6E-A1DA897E738B",
+    "id": 55,
+    "name": "Water tank, pump & roof plumbing",
+    "wbs": "6.5",
+    "outline_number": "6.5",
+    "outline_level": 2,
+    "parent_uid": 70,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-12-12",
+    "finish": "2026-12-16",
+    "duration_days": 4,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 53,
+    "free_float_days": 49,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 190000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-12-10",
+      "finish": "2026-12-14",
+      "duration_days": 4,
+      "cost": 190000
+     }
+    ],
+    "custom": {
+     "Text1": "6.2.3"
+    },
+    "boq_codes": "6.2.3"
+   },
+   {
+    "uid": 76,
+    "guid": "08CC3330-7BF3-39C0-2EEE-CFA17DB425A9",
+    "id": 56,
+    "name": "Sanitary fixtures",
+    "wbs": "6.6",
+    "outline_number": "6.6",
+    "outline_level": 2,
+    "parent_uid": 70,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2027-02-06",
+    "finish": "2027-02-12",
+    "duration_days": 6,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 5,
+    "free_float_days": 1,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 340000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2027-02-04",
+      "finish": "2027-02-10",
+      "duration_days": 6,
+      "cost": 340000
+     }
+    ],
+    "custom": {
+     "Text1": "6.2.4"
+    },
+    "boq_codes": "6.2.4"
+   },
+   {
+    "uid": 77,
+    "guid": "5B7F64E8-0837-6A7B-70F4-85FCF3E54C52",
+    "id": 57,
+    "name": "Lighting fixtures, sockets & distribution boards",
+    "wbs": "6.7",
+    "outline_number": "6.7",
+    "outline_level": 2,
+    "parent_uid": 70,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2027-02-09",
+    "finish": "2027-02-13",
+    "duration_days": 5,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 4,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 260000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2027-02-06",
+      "finish": "2027-02-11",
+      "duration_days": 5,
+      "cost": 260000
+     }
+    ],
+    "custom": {
+     "Text1": "6.1.3"
+    },
+    "boq_codes": "6.1.3"
+   },
+   {
+    "uid": 78,
+    "guid": "70087814-DF69-DB1D-22E5-7CC773098D9B",
+    "id": 58,
+    "name": "Fire alarm & detection",
+    "wbs": "6.8",
+    "outline_number": "6.8",
+    "outline_level": 2,
+    "parent_uid": 70,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2027-01-25",
+    "finish": "2027-01-28",
+    "duration_days": 4,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 18,
+    "free_float_days": 14,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 150000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2027-01-22",
+      "finish": "2027-01-26",
+      "duration_days": 4,
+      "cost": 150000
+     }
+    ],
+    "custom": {
+     "Text1": "6.3.1"
+    },
+    "boq_codes": "6.3.1"
+   },
+   {
+    "uid": 79,
+    "guid": "BAD98F9A-3953-D213-B53B-A3AED66CBF1D",
+    "id": 59,
+    "name": "Testing & commissioning",
+    "wbs": "6.9",
+    "outline_number": "6.9",
+    "outline_level": 2,
+    "parent_uid": 70,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2027-02-15",
+    "finish": "2027-02-18",
+    "duration_days": 4,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 4,
+    "free_float_days": 4,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 60000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2027-02-12",
+      "finish": "2027-02-16",
+      "duration_days": 4,
+      "cost": 60000
+     }
+    ],
+    "custom": {
+     "Text1": "6.4.1"
+    },
+    "boq_codes": "6.4.1"
+   },
+   {
+    "uid": 85,
+    "guid": "DEF6AA05-8791-82A3-27E5-17DE6A6784F6",
+    "id": 60,
+    "name": "Finishes",
+    "wbs": "7",
+    "outline_number": "7",
+    "outline_level": 1,
+    "is_summary": true,
+    "is_milestone": false,
+    "start": "2026-12-21",
+    "finish": "2027-02-23",
+    "duration_days": 54,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 3345000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-12-18",
+      "finish": "2027-02-20",
+      "duration_days": 54,
+      "cost": 3345000
+     }
+    ],
+    "custom": {}
+   },
+   {
+    "uid": 80,
+    "guid": "0AB581D2-1B7D-0C72-C705-9D2C93A9700F",
+    "id": 61,
+    "name": "Internal plastering",
+    "wbs": "7.1",
+    "outline_number": "7.1",
+    "outline_level": 2,
+    "parent_uid": 85,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-12-21",
+    "finish": "2027-01-11",
+    "duration_days": 18,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 380000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-12-18",
+      "finish": "2027-01-08",
+      "duration_days": 18,
+      "cost": 380000
+     }
+    ],
+    "custom": {
+     "Text1": "7.1.1"
+    },
+    "boq_codes": "7.1.1"
+   },
+   {
+    "uid": 81,
+    "guid": "3934FEBF-43D5-F205-0469-C8EA6A3E244A",
+    "id": 62,
+    "name": "External plastering",
+    "wbs": "7.2",
+    "outline_number": "7.2",
+    "outline_level": 2,
+    "parent_uid": 85,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2026-12-26",
+    "finish": "2027-01-13",
+    "duration_days": 15,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 23,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 330000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2026-12-24",
+      "finish": "2027-01-11",
+      "duration_days": 15,
+      "cost": 330000
+     }
+    ],
+    "custom": {
+     "Text1": "7.1.2"
+    },
+    "boq_codes": "7.1.2"
+   },
+   {
+    "uid": 82,
+    "guid": "0B7AAA87-3833-5950-89A2-C5F8E467F116",
+    "id": 63,
+    "name": "Cement-sand floor screed",
+    "wbs": "7.3",
+    "outline_number": "7.3",
+    "outline_level": 2,
+    "parent_uid": 85,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2027-01-08",
+    "finish": "2027-01-20",
+    "duration_days": 10,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 210000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2027-01-05",
+      "finish": "2027-01-16",
+      "duration_days": 10,
+      "cost": 210000
+     }
+    ],
+    "custom": {
+     "Text1": "7.2.1"
+    },
+    "boq_codes": "7.2.1"
+   },
+   {
+    "uid": 87,
+    "guid": "90510C87-4BD6-F272-8292-406E1F34FCBF",
+    "id": 64,
+    "name": "Ceramic floor & wall tiling",
+    "wbs": "7.4",
+    "outline_number": "7.4",
+    "outline_level": 2,
+    "parent_uid": 85,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2027-01-21",
+    "finish": "2027-02-05",
+    "duration_days": 14,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 460000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2027-01-18",
+      "finish": "2027-02-03",
+      "duration_days": 14,
+      "cost": 460000
+     }
+    ],
+    "custom": {
+     "Text1": "7.2.2"
+    },
+    "boq_codes": "7.2.2"
+   },
+   {
+    "uid": 88,
+    "guid": "A18023F2-C894-4B9C-36A7-724305B6FCEB",
+    "id": 65,
+    "name": "Marble cladding to staircase",
+    "wbs": "7.5",
+    "outline_number": "7.5",
+    "outline_level": 2,
+    "parent_uid": 85,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2027-01-21",
+    "finish": "2027-01-26",
+    "duration_days": 5,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 20,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 175000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2027-01-18",
+      "finish": "2027-01-23",
+      "duration_days": 5,
+      "cost": 175000
+     }
+    ],
+    "custom": {
+     "Text1": "7.2.3"
+    },
+    "boq_codes": "7.2.3"
+   },
+   {
+    "uid": 89,
+    "guid": "B4C75625-6D37-5B33-CF59-5147CE0133CC",
+    "id": 66,
+    "name": "Gypsum false ceiling",
+    "wbs": "7.6",
+    "outline_number": "7.6",
+    "outline_level": 2,
+    "parent_uid": 85,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2027-01-26",
+    "finish": "2027-02-05",
+    "duration_days": 10,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 240000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2027-01-23",
+      "finish": "2027-02-03",
+      "duration_days": 10,
+      "cost": 240000
+     }
+    ],
+    "custom": {
+     "Text1": "7.3.1"
+    },
+    "boq_codes": "7.3.1"
+   },
+   {
+    "uid": 86,
+    "guid": "E95FBA8E-DE05-1663-4699-3A1574BCA89E",
+    "id": 67,
+    "name": "Doors & windows",
+    "wbs": "7.7",
+    "outline_number": "7.7",
+    "outline_level": 2,
+    "parent_uid": 85,
+    "is_summary": true,
+    "is_milestone": false,
+    "start": "2027-01-14",
+    "finish": "2027-02-12",
+    "duration_days": 25,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 9,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 670000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2027-01-12",
+      "finish": "2027-02-10",
+      "duration_days": 25,
+      "cost": 670000
+     }
+    ],
+    "custom": {}
+   },
+   {
+    "uid": 91,
+    "guid": "ACCEA8D3-3621-7E15-838A-ADB8DE6DA71D",
+    "id": 68,
+    "name": "Metal windows & glazing",
+    "wbs": "7.7.1",
+    "outline_number": "7.7.1",
+    "outline_level": 3,
+    "parent_uid": 86,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2027-01-14",
+    "finish": "2027-01-23",
+    "duration_days": 8,
+    "constraint_type": 4,
+    "constraint_date": "2027-01-11",
+    "critical": false,
+    "total_float_days": 23,
+    "free_float_days": 23,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 390000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2027-01-12",
+      "finish": "2027-01-21",
+      "duration_days": 8,
+      "cost": 390000
+     }
+    ],
+    "custom": {
+     "Text1": "7.4.1"
+    },
+    "boq_codes": "7.4.1"
+   },
+   {
+    "uid": 92,
+    "guid": "EF2C400A-5DB2-9B74-FA26-F05F9A4CCC48",
+    "id": 69,
+    "name": "Doors & ironmongery",
+    "wbs": "7.7.2",
+    "outline_number": "7.7.2",
+    "outline_level": 3,
+    "parent_uid": 86,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2027-02-06",
+    "finish": "2027-02-12",
+    "duration_days": 6,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 9,
+    "free_float_days": 9,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 280000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2027-02-04",
+      "finish": "2027-02-10",
+      "duration_days": 6,
+      "cost": 280000
+     }
+    ],
+    "custom": {
+     "Text1": "7.4.2"
+    },
+    "boq_codes": "7.4.2"
+   },
+   {
+    "uid": 93,
+    "guid": "C251DE40-958E-17DD-D996-83F5A7127DF4",
+    "id": 70,
+    "name": "Kitchen cabinets & worktops [7.6.1]",
+    "wbs": "7.8",
+    "outline_number": "7.8",
+    "outline_level": 2,
+    "parent_uid": 85,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2027-02-06",
+    "finish": "2027-02-11",
+    "duration_days": 5,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 10,
+    "free_float_days": 10,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 220000,
+    "custom": {},
+    "boq_codes": "7.6.1"
+   },
+   {
+    "uid": 94,
+    "guid": "02E30178-5D02-4F11-F3A6-7CC062F36418",
+    "id": 71,
+    "name": "Balustrades & handrails",
+    "wbs": "7.9",
+    "outline_number": "7.9",
+    "outline_level": 2,
+    "parent_uid": 85,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2027-01-27",
+    "finish": "2027-01-30",
+    "duration_days": 4,
+    "constraint_type": 0,
+    "critical": false,
+    "total_float_days": 20,
+    "free_float_days": 20,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 120000,
+    "custom": {
+     "Text1": "7.7.1"
+    },
+    "boq_codes": "7.7.1"
+   },
+   {
+    "uid": 90,
+    "guid": "7E9864B0-1902-FBE9-9E30-895639DC6BCB",
+    "id": 72,
+    "name": "Painting — internal & external",
+    "wbs": "7.10",
+    "outline_number": "7.10",
+    "outline_level": 2,
+    "parent_uid": 85,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2027-02-06",
+    "finish": "2027-02-22",
+    "duration_days": 14,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 360000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2027-02-04",
+      "finish": "2027-02-19",
+      "duration_days": 14,
+      "cost": 360000
+     }
+    ],
+    "custom": {
+     "Text1": "7.5.1"
+    },
+    "boq_codes": "7.5.1"
+   },
+   {
+    "uid": 95,
+    "guid": "D2F18A65-732B-77E8-E61E-845714ECFB48",
+    "id": 73,
+    "name": "External works & landscaping",
+    "wbs": "7.11",
+    "outline_number": "7.11",
+    "outline_level": 2,
+    "parent_uid": 85,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2027-02-12",
+    "finish": "2027-02-23",
+    "duration_days": 10,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 180000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2027-02-10",
+      "finish": "2027-02-20",
+      "duration_days": 10,
+      "cost": 180000
+     }
+    ],
+    "custom": {}
+   },
+   {
+    "uid": 100,
+    "guid": "A2885D0F-74A1-C65A-9946-63937C3B321A",
+    "id": 74,
+    "name": "Testing & Handover",
+    "wbs": "8",
+    "outline_number": "8",
+    "outline_level": 1,
+    "is_summary": true,
+    "is_milestone": false,
+    "start": "2027-02-24",
+    "finish": "2027-03-06",
+    "duration_days": 9,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 135000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2027-02-22",
+      "finish": "2027-03-04",
+      "duration_days": 9,
+      "cost": 135000
+     }
+    ],
+    "custom": {}
+   },
+   {
+    "uid": 101,
+    "guid": "3417873C-D80C-3EB7-0E9B-DD7D2DC7BA53",
+    "id": 75,
+    "name": "Snagging & defects rectification",
+    "wbs": "8.1",
+    "outline_number": "8.1",
+    "outline_level": 2,
+    "parent_uid": 100,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2027-02-24",
+    "finish": "2027-03-03",
+    "duration_days": 6,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 90000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2027-02-22",
+      "finish": "2027-02-27",
+      "duration_days": 6,
+      "cost": 90000
+     }
+    ],
+    "custom": {
+     "Text1": "8.1.1"
+    },
+    "boq_codes": "8.1.1"
+   },
+   {
+    "uid": 102,
+    "guid": "72F8DA95-FBF2-0668-03DD-FA87710CB625",
+    "id": 76,
+    "name": "Final cleaning & handover documents",
+    "wbs": "8.2",
+    "outline_number": "8.2",
+    "outline_level": 2,
+    "parent_uid": 100,
+    "is_summary": false,
+    "is_milestone": false,
+    "start": "2027-03-04",
+    "finish": "2027-03-06",
+    "duration_days": 3,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 45000,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2027-03-01",
+      "finish": "2027-03-04",
+      "duration_days": 3,
+      "cost": 45000
+     }
+    ],
+    "custom": {
+     "Text1": "8.1.2"
+    },
+    "boq_codes": "8.1.2"
+   },
+   {
+    "uid": 103,
+    "guid": "A95F7E65-277B-033C-9D87-731D60D40E32",
+    "id": 77,
+    "name": "Practical completion",
+    "wbs": "8.3",
+    "outline_number": "8.3",
+    "outline_level": 2,
+    "parent_uid": 100,
+    "is_summary": false,
+    "is_milestone": true,
+    "start": "2027-03-06",
+    "finish": "2027-03-06",
+    "duration_days": 0,
+    "constraint_type": 0,
+    "critical": true,
+    "total_float_days": 0,
+    "free_float_days": 0,
+    "pct_complete": 0,
+    "physical_pct": 0,
+    "cost": 0,
+    "baselines": [
+     {
+      "number": 0,
+      "start": "2027-03-04",
+      "finish": "2027-03-04",
+      "duration_days": 0,
+      "cost": 0
+     }
+    ],
+    "custom": {}
+   }
+  ],
+  "links": [
+   {
+    "pred_uid": 2,
+    "succ_uid": 3,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 3,
+    "succ_uid": 4,
+    "type": "SS",
+    "lag_days": 2
+   },
+   {
+    "pred_uid": 3,
+    "succ_uid": 5,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 2,
+    "succ_uid": 6,
+    "type": "SS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 3,
+    "succ_uid": 7,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 5,
+    "succ_uid": 11,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 7,
+    "succ_uid": 11,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 11,
+    "succ_uid": 12,
+    "type": "SS",
+    "lag_days": 4
+   },
+   {
+    "pred_uid": 11,
+    "succ_uid": 13,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 13,
+    "succ_uid": 14,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 14,
+    "succ_uid": 16,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 16,
+    "succ_uid": 17,
+    "type": "SS",
+    "lag_days": 1
+   },
+   {
+    "pred_uid": 17,
+    "succ_uid": 18,
+    "type": "SS",
+    "lag_days": 1
+   },
+   {
+    "pred_uid": 18,
+    "succ_uid": 19,
+    "type": "SS",
+    "lag_days": 1
+   },
+   {
+    "pred_uid": 15,
+    "succ_uid": 20,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 12,
+    "succ_uid": 20,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 20,
+    "succ_uid": 21,
+    "type": "SS",
+    "lag_days": 2
+   },
+   {
+    "pred_uid": 20,
+    "succ_uid": 22,
+    "type": "FS",
+    "lag_days": 2
+   },
+   {
+    "pred_uid": 22,
+    "succ_uid": 23,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 22,
+    "succ_uid": 24,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 23,
+    "succ_uid": 25,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 21,
+    "succ_uid": 25,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 25,
+    "succ_uid": 32,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 32,
+    "succ_uid": 33,
+    "type": "SS",
+    "lag_days": 1
+   },
+   {
+    "pred_uid": 33,
+    "succ_uid": 34,
+    "type": "SS",
+    "lag_days": 1
+   },
+   {
+    "pred_uid": 34,
+    "succ_uid": 35,
+    "type": "SS",
+    "lag_days": 1
+   },
+   {
+    "pred_uid": 35,
+    "succ_uid": 36,
+    "type": "SS",
+    "lag_days": 1
+   },
+   {
+    "pred_uid": 36,
+    "succ_uid": 37,
+    "type": "SS",
+    "lag_days": 1
+   },
+   {
+    "pred_uid": 37,
+    "succ_uid": 38,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 38,
+    "succ_uid": 39,
+    "type": "SS",
+    "lag_days": 3
+   },
+   {
+    "pred_uid": 39,
+    "succ_uid": 40,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 38,
+    "succ_uid": 40,
+    "type": "FF",
+    "lag_days": 1
+   },
+   {
+    "pred_uid": 40,
+    "succ_uid": 41,
+    "type": "SS",
+    "lag_days": 1
+   },
+   {
+    "pred_uid": 40,
+    "succ_uid": 42,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 41,
+    "succ_uid": 42,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 40,
+    "succ_uid": 51,
+    "type": "FS",
+    "lag_days": 7
+   },
+   {
+    "pred_uid": 51,
+    "succ_uid": 52,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 52,
+    "succ_uid": 53,
+    "type": "SS",
+    "lag_days": 3
+   },
+   {
+    "pred_uid": 53,
+    "succ_uid": 54,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 54,
+    "succ_uid": 55,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 55,
+    "succ_uid": 56,
+    "type": "FS",
+    "lag_days": 3
+   },
+   {
+    "pred_uid": 55,
+    "succ_uid": 57,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 42,
+    "succ_uid": 61,
+    "type": "FS",
+    "lag_days": 3
+   },
+   {
+    "pred_uid": 61,
+    "succ_uid": 62,
+    "type": "SS",
+    "lag_days": 4
+   },
+   {
+    "pred_uid": 57,
+    "succ_uid": 63,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 61,
+    "succ_uid": 63,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 61,
+    "succ_uid": 64,
+    "type": "SS",
+    "lag_days": 5
+   },
+   {
+    "pred_uid": 63,
+    "succ_uid": 64,
+    "type": "FF",
+    "lag_days": 2
+   },
+   {
+    "pred_uid": 61,
+    "succ_uid": 71,
+    "type": "SS",
+    "lag_days": 2
+   },
+   {
+    "pred_uid": 61,
+    "succ_uid": 72,
+    "type": "SS",
+    "lag_days": 3
+   },
+   {
+    "pred_uid": 56,
+    "succ_uid": 73,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 80,
+    "succ_uid": 74,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 71,
+    "succ_uid": 74,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 56,
+    "succ_uid": 75,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 87,
+    "succ_uid": 76,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 74,
+    "succ_uid": 77,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 90,
+    "succ_uid": 77,
+    "type": "SS",
+    "lag_days": 2
+   },
+   {
+    "pred_uid": 74,
+    "succ_uid": 78,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 76,
+    "succ_uid": 79,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 77,
+    "succ_uid": 79,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 78,
+    "succ_uid": 79,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 75,
+    "succ_uid": 79,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 64,
+    "succ_uid": 80,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 72,
+    "succ_uid": 80,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 80,
+    "succ_uid": 81,
+    "type": "SS",
+    "lag_days": 5
+   },
+   {
+    "pred_uid": 80,
+    "succ_uid": 82,
+    "type": "FS",
+    "lag_days": -3
+   },
+   {
+    "pred_uid": 82,
+    "succ_uid": 87,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 82,
+    "succ_uid": 88,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 87,
+    "succ_uid": 89,
+    "type": "SS",
+    "lag_days": 4
+   },
+   {
+    "pred_uid": 74,
+    "succ_uid": 89,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 81,
+    "succ_uid": 91,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 87,
+    "succ_uid": 92,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 87,
+    "succ_uid": 93,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 88,
+    "succ_uid": 94,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 89,
+    "succ_uid": 90,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 91,
+    "succ_uid": 90,
+    "type": "FF",
+    "lag_days": 2
+   },
+   {
+    "pred_uid": 90,
+    "succ_uid": 95,
+    "type": "SS",
+    "lag_days": 5
+   },
+   {
+    "pred_uid": 90,
+    "succ_uid": 101,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 79,
+    "succ_uid": 101,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 92,
+    "succ_uid": 101,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 93,
+    "succ_uid": 101,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 94,
+    "succ_uid": 101,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 95,
+    "succ_uid": 101,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 101,
+    "succ_uid": 102,
+    "type": "FS",
+    "lag_days": 0
+   },
+   {
+    "pred_uid": 102,
+    "succ_uid": 103,
+    "type": "FS",
+    "lag_days": 0
+   }
+  ],
+  "resources": [
+   {
+    "uid": 1,
+    "name": "Concrete gang (foreman + 8)",
+    "type": "work"
+   },
+   {
+    "uid": 2,
+    "name": "C-25 ready-mix concrete",
+    "type": "material"
+   },
+   {
+    "uid": 3,
+    "name": "Masonry subcontractor",
+    "type": "cost"
+   }
+  ],
+  "assignments": [
+   {
+    "uid": 1,
+    "task_uid": 16,
+    "resource_uid": 1,
+    "units": 1,
+    "work_hours": 32,
+    "cost": 52500,
+    "baseline_cost": 52500
+   },
+   {
+    "uid": 2,
+    "task_uid": 16,
+    "resource_uid": 2,
+    "units": 1,
+    "work_hours": 0,
+    "cost": 94500,
+    "baseline_cost": 94500
+   },
+   {
+    "uid": 3,
+    "task_uid": 17,
+    "resource_uid": 1,
+    "units": 1,
+    "work_hours": 32,
+    "cost": 52500,
+    "baseline_cost": 52500
+   },
+   {
+    "uid": 4,
+    "task_uid": 17,
+    "resource_uid": 2,
+    "units": 1,
+    "work_hours": 0,
+    "cost": 94500,
+    "baseline_cost": 94500
+   },
+   {
+    "uid": 5,
+    "task_uid": 18,
+    "resource_uid": 1,
+    "units": 1,
+    "work_hours": 32,
+    "cost": 52500,
+    "baseline_cost": 52500
+   },
+   {
+    "uid": 6,
+    "task_uid": 18,
+    "resource_uid": 2,
+    "units": 1,
+    "work_hours": 0,
+    "cost": 94500,
+    "baseline_cost": 94500
+   },
+   {
+    "uid": 7,
+    "task_uid": 19,
+    "resource_uid": 1,
+    "units": 1,
+    "work_hours": 32,
+    "cost": 52500,
+    "baseline_cost": 52500
+   },
+   {
+    "uid": 8,
+    "task_uid": 19,
+    "resource_uid": 2,
+    "units": 1,
+    "work_hours": 0,
+    "cost": 94500,
+    "baseline_cost": 94500
+   },
+   {
+    "uid": 9,
+    "task_uid": 32,
+    "resource_uid": 1,
+    "units": 1,
+    "work_hours": 24,
+    "cost": 15500,
+    "baseline_cost": 15500
+   },
+   {
+    "uid": 10,
+    "task_uid": 33,
+    "resource_uid": 1,
+    "units": 1,
+    "work_hours": 24,
+    "cost": 15500,
+    "baseline_cost": 15500
+   },
+   {
+    "uid": 11,
+    "task_uid": 34,
+    "resource_uid": 1,
+    "units": 1,
+    "work_hours": 24,
+    "cost": 15500,
+    "baseline_cost": 15500
+   },
+   {
+    "uid": 12,
+    "task_uid": 35,
+    "resource_uid": 1,
+    "units": 1,
+    "work_hours": 24,
+    "cost": 15500,
+    "baseline_cost": 15500
+   },
+   {
+    "uid": 13,
+    "task_uid": 36,
+    "resource_uid": 1,
+    "units": 1,
+    "work_hours": 24,
+    "cost": 15500,
+    "baseline_cost": 15500
+   },
+   {
+    "uid": 14,
+    "task_uid": 37,
+    "resource_uid": 1,
+    "units": 1,
+    "work_hours": 24,
+    "cost": 15500,
+    "baseline_cost": 15500
+   },
+   {
+    "uid": 15,
+    "task_uid": 40,
+    "resource_uid": 2,
+    "units": 1,
+    "work_hours": 0,
+    "cost": 274500,
+    "baseline_cost": 274500
+   },
+   {
+    "uid": 16,
+    "task_uid": 61,
+    "resource_uid": 3,
+    "units": 1,
+    "work_hours": 0,
+    "cost": 252000,
+    "baseline_cost": 252000
+   }
+  ],
+  "custom_fields": [
+   {
+    "field_id": 188743731,
+    "field_name": "Text1",
+    "alias": "BoQ Code"
+   },
+   {
+    "field_id": 188743734,
+    "field_name": "Text2",
+    "alias": "Element Codes"
+   }
+  ],
+  "warnings": []
+ },
+ "mapping": {
+  "boq_field": "Text1",
+  "element_field": "Text2"
+ },
+ "options": {
+  "baseline_number": 0
+ }
+}

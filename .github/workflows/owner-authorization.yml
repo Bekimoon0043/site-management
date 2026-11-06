@@ -1,0 +1,26 @@
+name: Owner authorization
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+
+jobs:
+  verify-owner:
+    name: Owner authorization
+    runs-on: ubuntu-latest
+    steps:
+      - name: Reject non-owner changes
+        if: ${{ github.actor != 'Bekimoon0043' }}
+        shell: bash
+        run: |
+          echo "::error::Only the authenticated repository owner may propose changes."
+          exit 1
+
+      - name: Confirm repository owner
+        if: ${{ github.actor == 'Bekimoon0043' }}
+        shell: bash
+        run: echo "Change proposed by the authenticated repository owner."
+

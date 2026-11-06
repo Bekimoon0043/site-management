@@ -1,0 +1,12 @@
+/* Finance: petty cash claims, cash-flow bars, permission matrix. Tokens only. */
+@layer pages {
+  .pay-claim { display: flex; flex-direction: column; gap: var(--sp-2); padding: var(--sp-2) var(--sp-3); border: 1px solid var(--border); border-radius: var(--radius); }
+  .cf-bar { display: flex; align-items: center; gap: 4px; min-width: 120px; }
+  .cf-bar span { display: block; height: 10px; border-radius: 2px; }
+  .cf-bar .in { background: var(--success, #1a7f37); }
+  .cf-bar .out { background: var(--danger, #b42318); }
+  .cf-neg { color: var(--danger, #b42318); font-weight: var(--fw-semibold); }
+  .perm-matrix td.c, .perm-matrix th.c { text-align: center; }
+  .perm-matrix td.yes { color: var(--success, #1a7f37); font-weight: var(--fw-semibold); }
+  .perm-matrix td.no { color: var(--text-subtle); }
+}

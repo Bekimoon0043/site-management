@@ -1,0 +1,8 @@
+/* Layer order: later layers win. All app CSS lives in a layer; see styles/*.css */
+@layer tokens, base, components, pages, utilities;
+@import './styles/tokens.css';
+@import './styles/base.css';
+@import './styles/components.css';
+@import './styles/pages.css';
+@import './styles/utilities.css';
+@import './styles/print.css';

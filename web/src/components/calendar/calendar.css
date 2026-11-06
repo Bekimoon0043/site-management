@@ -1,0 +1,49 @@
+/* Project calendar: two month grids, day cells, holiday panel. Tokens only. */
+@layer pages {
+  .cal-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2); }
+  .cal-toolbar .grow { flex: 1; }
+  .cal-legend { display: flex; flex-wrap: wrap; gap: var(--sp-3); font-size: var(--fs-xs); color: var(--text-muted); }
+  .cal-legend span { display: inline-flex; align-items: center; gap: 4px; }
+  .cal-legend i { width: 12px; height: 12px; border-radius: 3px; border: 1px solid var(--border); display: inline-block; }
+  .cal-months { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sp-4); }
+  @media (max-width: 1100px) { .cal-months { grid-template-columns: 1fr; } }
+  .cal-month { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--sp-3); min-width: 0; }
+  .cal-month-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--sp-2); margin-bottom: var(--sp-2); }
+  .cal-month-head h2 { margin: 0; font-size: var(--fs-lg); }
+  .cal-month-head .muted { font-size: var(--fs-sm); }
+  .cal-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 3px; }
+  .cal-dow { font-size: var(--fs-xs); color: var(--text-muted); text-align: center; padding: 2px 0; font-weight: var(--fw-medium); }
+  .cal-day { display: flex; flex-direction: column; align-items: stretch; gap: 2px; text-align: left; min-height: 78px; height: auto;
+    padding: 4px 5px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface);
+    font-weight: var(--fw-regular); white-space: normal; overflow: hidden; color: var(--text); }
+  .cal-day:hover { border-color: var(--border-strong); }
+  .cal-day .top { display: flex; justify-content: space-between; align-items: baseline; gap: 2px; }
+  .cal-day .n { font-weight: var(--fw-semibold); font-size: var(--fs-md); }
+  .cal-day .alt { font-size: 10px; color: var(--text-subtle); white-space: nowrap; }
+  .cal-day .lbl { font-size: 11px; line-height: 1.2; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+  .cal-day .chip { align-self: flex-start; font-size: 10px; padding: 0 5px; border-radius: var(--radius-full); background: var(--muted-bg); color: var(--text-muted); }
+  .cal-day.off { background: var(--surface-2); color: var(--text-muted); }
+  .cal-day.hol { background: var(--warning-soft); border-color: var(--warning); color: var(--text); }
+  .cal-day.hol.work { background: var(--success-soft); border-color: var(--success); }
+  .cal-day.half { background: linear-gradient(135deg, var(--surface) 50%, var(--surface-2) 50%); }
+  .cal-day.extra { background: var(--info-soft); border-color: var(--info); }
+  .cal-day.rain { background: var(--surface-3); }
+  .cal-day.today { box-shadow: 0 0 0 2px var(--primary); }
+  .cal-day.pending .chip { background: var(--warning); color: var(--warning-on); }
+  .cal-day.blank { visibility: hidden; }
+  .cal-side { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: var(--sp-4); }
+  @media (max-width: 1100px) { .cal-side { grid-template-columns: 1fr; } }
+  .cal-hol-list { display: flex; flex-direction: column; }
+  .cal-hol-row { display: grid; grid-template-columns: 110px minmax(0, 1fr) auto; gap: var(--sp-2); align-items: center; text-align: left;
+    padding: 6px var(--sp-2); border: 0; border-bottom: 1px solid var(--border); border-radius: 0; background: none; height: auto; white-space: normal; font-weight: var(--fw-regular); }
+  .cal-hol-row:hover { background: var(--surface-2); }
+  .cal-hol-row .small-text { color: var(--text-muted); }
+  .cal-choice { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--sp-2); }
+  .cal-choice .choice-card { cursor: pointer; flex-direction: row; align-items: center; padding: var(--sp-2) var(--sp-3); border: 1px solid var(--border); }
+  .cal-choice input { margin: 0; }
+  .cal-week { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+  .cal-week label { display: inline-flex; align-items: center; gap: 4px; }
+  .cal-kinds { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sp-2); }
+  .cal-kinds .choice-card { cursor: pointer; border: 1px solid var(--border); }
+  @media (max-width: 560px) { .cal-day { min-height: 56px; } .cal-day .lbl { display: none; } .cal-choice { grid-template-columns: 1fr; } }
+}

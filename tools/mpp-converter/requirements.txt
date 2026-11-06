@@ -1,0 +1,3 @@
+# Python 3.10+ and a Java 11+ runtime (JAVA_HOME). server.py itself is stdlib-only.
+mpxj==16.10.0
+JPype1

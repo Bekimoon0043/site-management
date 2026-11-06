@@ -1,0 +1,29 @@
+/* Payments: certificate / payroll editors, attendance grid, print layout. Tokens only (styles/tokens.css). */
+@layer pages {
+  .pay-table input, .pay-table select { min-height: 32px; }
+  .pay-table td { white-space: nowrap; }
+  .pay-table td input:disabled { background: transparent; border-color: transparent; color: var(--text); }
+  .pay-summary { display: grid; grid-template-columns: 1fr auto; gap: 4px var(--sp-4); max-width: 520px; font-variant-numeric: tabular-nums; }
+  .pay-summary dt { color: var(--text-muted); }
+  .pay-summary dd { margin: 0; text-align: right; }
+  .pay-summary .total { font-weight: var(--fw-semibold); border-top: 1px solid var(--border); padding-top: 4px; color: var(--text); }
+  .pay-summary .minus { color: var(--danger, #b42318); }
+
+  .att-grid th, .att-grid td { padding: 0 4px; text-align: center; }
+  .att-grid th.wk-name, .att-grid td.wk-name { text-align: left; position: sticky; left: 0; background: var(--surface); z-index: 1; min-width: 180px; }
+  .att-grid th.wk-name { background: var(--surface-2); z-index: 3; }
+  .att-grid .day-h { font-size: var(--fs-xs, 12px); line-height: 1.1; }
+  .att-grid .day-h.off { color: var(--text-muted); }
+  .att-cell { all: unset; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 28px;
+    border: 1px solid var(--border); border-radius: var(--radius-sm); cursor: pointer; font-weight: var(--fw-semibold); }
+  .att-cell:focus-visible { box-shadow: var(--focus-ring); }
+  .att-cell.v1 { background: color-mix(in srgb, var(--success, #12b76a) 22%, transparent); }
+  .att-cell.v05 { background: color-mix(in srgb, var(--warning, #f79009) 22%, transparent); }
+  .att-cell:disabled, .att-cell[aria-disabled="true"] { cursor: default; }
+
+  .pay-sign { min-width: 120px; }
+  @media print {
+    .pay-sign { border-bottom: 1px solid #999; height: 28px; }
+    .att-cell { border: none; }
+  }
+}

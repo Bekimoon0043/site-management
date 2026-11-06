@@ -1,0 +1,13 @@
+{
+  "name": "site-management",
+  "private": true,
+  "scripts": {
+    "test:db": "node supabase/tests/run.mjs && node supabase/tests/procurement.test.mjs && node supabase/tests/field.test.mjs && node supabase/tests/control.test.mjs && node supabase/tests/flows.test.mjs && node supabase/tests/schedule.test.mjs && node supabase/tests/schedule-boq.test.mjs && node supabase/tests/schedule-editing.test.mjs && node supabase/tests/lookahead.test.mjs && node supabase/tests/daily-output.test.mjs && node supabase/tests/siteuse.test.mjs && node supabase/tests/purchase-e2e.test.mjs && node supabase/tests/client-billing.test.mjs && node supabase/tests/material-costing.test.mjs && node supabase/tests/payments.test.mjs && node supabase/tests/elements-from-schedule.test.mjs && node supabase/tests/contract-admin.test.mjs &&node supabase/tests/photos.test.mjs && node supabase/tests/site-ops.test.mjs && node supabase/tests/materials-roles.test.mjs && node supabase/tests/finance.test.mjs && node supabase/tests/calendar.test.mjs && node supabase/tests/client-portal.test.mjs && node supabase/tests/migrations-rerun.test.mjs",
+    "sync:contract": "node -e \"const fs=require('fs');for (const a of ['mobile','web']) for (const f of fs.readdirSync('shared')) if (f.endsWith('.ts')) fs.copyFileSync('shared/'+f, a+'/src/lib/'+f)\"",
+    "local": "node local-server/server.mjs",
+    "local:reset": "node -e \"const fs=require('fs');for (const d of ['local-server/data/pg','local-server/data/storage']) fs.rmSync(d,{recursive:true,force:true});console.log('Local database and storage deleted (jwt-secret kept). Run: npm run local')\""
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.13"
+  }
+}

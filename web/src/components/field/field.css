@@ -1,0 +1,39 @@
+/* Field & control pages: diary month calendar, QR label sheet. Tokens only (styles/tokens.css). */
+@layer pages {
+  .cal-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+  .cal-head { background: var(--surface-2); color: var(--text-muted); font-size: var(--fs-xs); font-weight: 600; text-transform: uppercase; padding: var(--sp-1) var(--sp-2); }
+  .cal-day { background: var(--surface); min-height: 88px; padding: var(--sp-1) var(--sp-2); display: flex; flex-direction: column; gap: 2px; font-size: var(--fs-sm); }
+  .cal-day.out { background: var(--surface-2); color: var(--text-subtle); }
+  .cal-day.today .cal-num { color: var(--primary); font-weight: 700; }
+  .cal-num { font-size: var(--fs-xs); color: var(--text-muted); display: flex; justify-content: space-between; gap: var(--sp-1); }
+  .cal-num .eth { color: var(--text-subtle); }
+  .cal-entry { all: unset; cursor: pointer; display: flex; align-items: center; gap: 4px; padding: 1px 4px; border-radius: var(--radius-sm); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .cal-entry:hover, .cal-entry:focus-visible { background: var(--surface-3); outline: 2px solid var(--focus, var(--primary)); outline-offset: -2px; }
+  .cal-nav { display: flex; align-items: center; gap: var(--sp-2); }
+  .cal-nav .title { min-width: 180px; text-align: center; font-weight: 600; }
+
+  .summary-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--sp-1); }
+  .summary-list li { display: flex; gap: var(--sp-2); align-items: baseline; }
+  .summary-list .no { font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+  .qr-sheet { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-2); }
+  .qr-label { border: 1px dashed var(--border-strong); border-radius: var(--radius-sm); padding: var(--sp-2); display: flex; gap: var(--sp-2); align-items: center; min-height: 33mm; break-inside: avoid; }
+  .qr-label svg, .qr-label img { width: 26mm; height: 26mm; flex: none; }
+  .qr-label .ql-text { min-width: 0; display: flex; flex-direction: column; gap: 2px; font-size: var(--fs-sm); }
+  .qr-label .ql-title { font-weight: 700; font-size: var(--fs-md); overflow-wrap: anywhere; }
+  .qr-label .ql-sub { color: var(--text-muted); font-size: var(--fs-xs); overflow-wrap: anywhere; }
+
+  .pref-matrix th, .pref-matrix td { text-align: center; }
+  .pref-matrix th:first-child, .pref-matrix td:first-child { text-align: left; }
+  .tg-code { font-family: var(--font-mono, monospace); font-size: var(--fs-xl); letter-spacing: .08em; }
+  /* diary editor rows (labour / equipment / delays) */
+  .diary-edit-row { align-items: end; padding-bottom: var(--sp-2); border-bottom: 1px dashed var(--border); }
+}
+
+@media print {
+  @page labels { size: A4 portrait; margin: 8mm 7mm; }
+  .qr-print { page: labels; }
+  .qr-sheet { grid-template-columns: repeat(3, 1fr); gap: 0; }
+  .qr-label { height: 35mm; border: 0.2mm dashed #999; border-radius: 0; }
+  .cal-grid { break-inside: avoid; }
+}

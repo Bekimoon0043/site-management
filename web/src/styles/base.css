@@ -1,0 +1,87 @@
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+  html {
+    font-family: var(--font-sans);
+    font-size: var(--fs-base);
+    line-height: var(--lh);
+    color: var(--text);
+    background: var(--bg);
+    font-feature-settings: 'cv11';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  body { margin: 0; background: var(--bg); color: var(--text); min-height: 100dvh; }
+  h1 { font-size: var(--fs-xl); font-weight: var(--fw-semibold); line-height: var(--lh-tight); margin: 0; letter-spacing: -0.01em; }
+  h2 { font-size: var(--fs-md); font-weight: var(--fw-semibold); line-height: var(--lh-tight); margin: 0; }
+  h3 { font-size: var(--fs-base); font-weight: var(--fw-semibold); margin: var(--sp-4) 0 var(--sp-2); }
+  p { margin: 0 0 var(--sp-2); }
+  a { color: var(--primary); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code { font-family: var(--font-mono); font-size: 0.95em; background: var(--surface-2); padding: 1px 4px; border-radius: var(--radius-sm); }
+  pre { font-family: var(--font-mono); }
+  hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-4) 0; }
+  img { max-width: 100%; }
+  ::selection { background: var(--primary-soft); }
+
+  button, select, input, textarea { font: inherit; color: inherit; }
+
+  /* Buttons: secondary by default; .primary .danger .ghost; .small/.sm and .lg sizes */
+  button {
+    display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+    min-height: var(--control-h); padding: 0 12px;
+    background: var(--surface); color: var(--text);
+    border: 1px solid var(--border); border-radius: var(--radius);
+    font-weight: var(--fw-medium); white-space: nowrap; cursor: pointer;
+    transition: background var(--dur-fast) ease-out, border-color var(--dur-fast) ease-out, color var(--dur-fast) ease-out;
+  }
+  button:hover:not(:disabled) { border-color: var(--border-strong); background: var(--surface-2); }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+  button.primary { background: var(--primary); border-color: var(--primary); color: var(--primary-fg); }
+  button.primary:hover:not(:disabled) { background: var(--primary-hover); border-color: var(--primary-hover); }
+  button.danger { background: var(--danger); border-color: var(--danger); color: #fff; }
+  :root[data-theme="dark"] button.danger { color: #1a0505; }
+  button.danger:hover:not(:disabled) { background: var(--danger); filter: brightness(0.92); }
+  button.ghost { background: transparent; border-color: transparent; }
+  button.ghost:hover:not(:disabled) { background: var(--surface-2); border-color: transparent; }
+  button.small, button.sm { min-height: 28px; padding: 0 8px; font-size: var(--fs-sm); }
+  button.lg { min-height: 40px; padding: 0 16px; font-size: var(--fs-md); }
+  button.link-btn { border: none; background: none; color: var(--primary); padding: 0; min-height: 0; font-weight: var(--fw-medium); }
+  button.link-btn:hover:not(:disabled) { background: none; text-decoration: underline; }
+  button svg, a svg { flex: none; }
+  .icon-btn {
+    border: 1px solid transparent; background: transparent; padding: 0; width: 32px; min-height: 32px; height: 32px;
+    color: var(--text-muted); border-radius: var(--radius);
+  }
+  .icon-btn:hover:not(:disabled) { background: var(--surface-3); border-color: transparent; color: var(--text); }
+  .icon-btn.sm { width: 28px; height: 28px; min-height: 28px; }
+
+  input, select, textarea {
+    background: var(--surface); color: var(--text);
+    border: 1px solid var(--border-strong); border-radius: var(--radius);
+    min-height: var(--control-h); padding: 0 10px; max-width: 100%;
+    font-size: var(--fs-md);
+    transition: border-color var(--dur-fast) ease-out, box-shadow var(--dur-fast) ease-out;
+  }
+  textarea { padding: 8px 10px; line-height: var(--lh); resize: vertical; }
+  select { padding-right: 28px; appearance: none; cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238a93a3' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 8px center; }
+  input::placeholder, textarea::placeholder { color: var(--text-subtle); }
+  input:disabled, select:disabled, textarea:disabled { background: var(--surface-2); color: var(--text-muted); cursor: not-allowed; }
+  input[type='number'] { font-variant-numeric: tabular-nums; }
+  input[type='checkbox'], input[type='radio'] {
+    min-height: 0; width: 16px; height: 16px; padding: 0; margin: 0; accent-color: var(--primary); cursor: pointer; flex: none;
+  }
+  input[type='file'] { border-style: dashed; padding: 6px; height: auto; }
+  [aria-invalid='true'] { border-color: var(--danger) !important; }
+
+  :focus-visible { outline: none; box-shadow: var(--focus-ring); }
+  input:focus, select:focus, textarea:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-soft); }
+  tr[tabindex]:focus-visible { box-shadow: inset 0 0 0 2px var(--primary); }
+
+  table, .num, .kpi-value, .tnum { font-variant-numeric: tabular-nums; }
+  .code { font-feature-settings: 'zero', 'tnum'; font-variant-numeric: tabular-nums slashed-zero; }
+
+  dialog { color: var(--text); }
+}

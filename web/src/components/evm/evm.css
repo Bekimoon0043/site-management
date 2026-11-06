@@ -1,0 +1,17 @@
+/* Earned value, periods, costs. Tokens only (styles/tokens.css). */
+@layer pages {
+  .evm-summary { border: 1px solid var(--border); border-left: 3px solid var(--primary); border-radius: var(--radius); background: var(--surface); padding: var(--sp-3) var(--sp-4); display: flex; flex-direction: column; gap: var(--sp-1); }
+  .evm-summary-head { font-size: var(--fs-xs); font-weight: var(--fw-semibold); text-transform: uppercase; letter-spacing: .04em; color: var(--text-muted); }
+  .evm-headline { margin: 0; display: flex; flex-wrap: wrap; gap: var(--sp-2); align-items: center; font-size: var(--fs-md); }
+  .evm-sentence { margin: 0; font-size: var(--fs-md); line-height: var(--lh); }
+  .evm-kpis { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); }
+  .evm-crumbs { font-size: var(--fs-sm); display: flex; flex-wrap: wrap; align-items: center; }
+  .check-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--sp-2); }
+  .check-list li { display: flex; gap: var(--sp-2); align-items: flex-start; }
+  .check-list li svg { flex: none; margin-top: 2px; }
+  .check-list .ok { color: var(--success); } .check-list .warn { color: var(--warning); } .check-list .bad { color: var(--danger); }
+  .card-lite { border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface-2); padding: var(--sp-2) var(--sp-3); display: flex; flex-direction: column; gap: 2px; }
+  .cov-bar { height: 8px; border-radius: var(--radius-full); background: var(--surface-3); overflow: hidden; }
+  .cov-bar > span { display: block; height: 100%; background: var(--primary); }
+  .cov-bar.warn > span { background: var(--warning); }
+}

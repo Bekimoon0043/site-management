@@ -1,0 +1,40 @@
+@layer pages {
+  .dash-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); gap: var(--sp-4); }
+  .dash-meta { display: flex; align-items: center; gap: var(--sp-2); color: var(--text-muted); font-size: var(--fs-sm); }
+  .mr-lines input.num-input { width: 100px; }
+  .warn-line { color: var(--warning); display: inline-flex; vertical-align: middle; }
+  .client-health { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: var(--sp-3); padding: var(--sp-4); border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface); }
+  .client-health-light { width: 20px; height: 20px; border-radius: 50%; background: var(--success); box-shadow: 0 0 0 5px color-mix(in srgb, var(--success) 18%, transparent); }
+  .client-health.attention .client-health-light { background: var(--warning); box-shadow: 0 0 0 5px color-mix(in srgb, var(--warning) 18%, transparent); }
+  .client-health.critical .client-health-light { background: var(--danger); box-shadow: 0 0 0 5px color-mix(in srgb, var(--danger) 18%, transparent); }
+  .client-health-label { font-weight: 800; font-size: var(--fs-lg); }
+  .client-health-times { display: grid; gap: 3px; text-align: right; color: var(--text-muted); font-size: var(--fs-sm); }
+  .client-change-list { display: grid; gap: var(--sp-3); margin: var(--sp-2) 0; padding-left: 1.25rem; }
+  .client-photo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: var(--sp-3); }
+  .client-photo-grid.compact { grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); }
+  .client-photo { overflow: hidden; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface-2); color: inherit; text-decoration: none; }
+  .client-photo img, .client-photo-empty { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: grid; place-items: center; }
+  .client-photo > span { display: grid; gap: 3px; padding: var(--sp-2) var(--sp-3); }
+  .client-photo small { color: var(--text-muted); }
+  .client-progress-chart { min-width: 0; }
+  .client-published-chip { position: absolute; top: 8px; right: 8px; z-index: 2; padding: 3px 7px; border-radius: 999px; background: #0f766e; color: #fff; font-size: 11px; font-weight: 700; }
+  .client-tab-panel { padding-top: var(--sp-2); }
+  .client-primary-kpis { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .client-compact-empty { padding: var(--sp-4); border: 1px dashed var(--border); border-radius: var(--radius); background: var(--surface-2); color: var(--text-muted); }
+  .client-optional-error { padding: var(--sp-3); border: 1px solid color-mix(in srgb, var(--danger) 30%, var(--border)); border-radius: var(--radius); background: color-mix(in srgb, var(--danger) 6%, var(--surface)); }
+  .client-supporting-warning { padding: var(--sp-3) var(--sp-4); border: 1px solid color-mix(in srgb, var(--warning) 40%, var(--border)); border-radius: var(--radius); background: color-mix(in srgb, var(--warning) 8%, var(--surface)); color: var(--text); font-size: var(--fs-sm); }
+  .client-method-details { border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+  .client-method-details summary { cursor: pointer; padding: var(--sp-3) var(--sp-4); font-weight: 700; }
+  .client-method-details[open] summary { border-bottom: 1px solid var(--border); }
+  .client-method-details > div { padding: 0 var(--sp-4) var(--sp-3); }
+  .client-privacy-note { margin: var(--sp-5) 0 0; padding-top: var(--sp-3); border-top: 1px solid var(--border); }
+  @media (max-width: 720px) {
+    .client-health { grid-template-columns: auto minmax(0, 1fr); }
+    .client-health-times { grid-column: 1 / -1; text-align: left; border-top: 1px solid var(--border); padding-top: var(--sp-2); }
+    .client-report-actions { width: 100%; }
+    .client-report-actions button { flex: 1; }
+    .client-primary-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .client-photo-grid, .client-photo-grid.compact { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 420px) { .client-primary-kpis { grid-template-columns: 1fr; } }
+}

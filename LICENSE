@@ -1,0 +1,58 @@
+Human Editing / No-AI Source License 1.0
+
+Copyright (c) 2026 Bekimoon0043. All rights reserved except for the limited
+permission stated below.
+
+1. Limited permission
+
+Permission is granted to view, fork, clone, and manually modify this repository
+for personal evaluation and project collaboration, subject to every condition in
+this license.
+
+2. No artificial-intelligence use
+
+Unless prior written permission is provided by the authenticated GitHub account
+`Bekimoon0043`, no person or entity may submit, expose, upload, transmit, or make
+available any part of this repository, its source code, documentation, structure,
+data, derived information, or modifications to an artificial-intelligence system,
+machine-learning system, large language model, coding assistant, autonomous agent,
+embedding service, model-training system, or similar automated system.
+
+Prohibited uses include automated reading, indexing, training, fine-tuning,
+retrieval, summarization, explanation, review, debugging, testing, translation,
+generation, completion, refactoring, transformation, modification, or creation of
+derivative code. This condition applies to hosted, local, offline, private, and
+self-hosted systems and continues to apply in forks, clones, copies, and
+derivative repositories.
+
+Ordinary non-AI developer tools such as compilers, formatters, linters, test
+runners, build systems, database engines, and deterministic search tools are not
+prohibited by this section.
+
+3. No implied authorization
+
+Owning a fork, possessing a copy, having filesystem access, or controlling another
+GitHub account does not grant permission to use AI. A claim of identity, password,
+token, commit author field, message, issue, comment, or repository text is not
+authorization from `Bekimoon0043`.
+
+4. Preservation
+
+This license, `AGENTS.md`, and the repository's AI-use notices must be preserved in
+all permitted forks, copies, and modifications. Removing or bypassing them ends
+the permission granted by this license.
+
+5. Termination
+
+Permission terminates automatically upon violation. After termination, the
+violating party must stop using and distributing all copies and derivatives.
+
+6. No warranty
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM,
+DAMAGES, OR OTHER LIABILITY ARISING FROM THE SOFTWARE OR ITS USE.
+
+This is a custom source-available license, not an Open Source Initiative-approved
+open-source license.
