@@ -1,19 +1,15 @@
 # Deploying the Web Console on Railway
 
-## Recommended setup (current)
+## Recommended setup (Railpack)
 
-The Dockerfile and `railway.toml` now live at the **repository root**.
-
-### 1. Railway service settings
+### 1. Service Settings
 
 | Setting | Value |
 |---------|-------|
-| **Root Directory** | *(leave empty / blank)* |
-| **Builder** | Dockerfile |
+| **Root Directory** | `web` |
+| **Builder** | Railpack (default) |
 
-### 2. Environment variables
-
-Add these in the service → **Variables**:
+### 2. Environment Variables
 
 ```
 VITE_SUPABASE_URL=https://altaudsxszkszeehlgxl.supabase.co
@@ -21,28 +17,21 @@ VITE_SUPABASE_ANON_KEY=your-anon-key
 VITE_TELEGRAM_BOT=Sitemanagement_bot
 ```
 
-> Do **not** put the Telegram bot token here.  
-> Put the token only in Supabase secrets.
+These must be present at **build time** (Vite inlines them).
 
 ### 3. Deploy
 
-Redeploy. You should see in the logs:
+Just redeploy. Railpack will:
+1. Run `npm install`
+2. Run `npm run build`
+3. Start with `npx serve -s dist -l $PORT`
 
-```
-==========================
-Using detected Dockerfile!
-==========================
-```
+## Telegram bot (Supabase side only)
 
-## Telegram bot setup (Supabase)
+Do **not** put the bot token in Railway.
 
 ```bash
-npx supabase secrets set TELEGRAM_BOT_TOKEN=your-bot-token
+npx supabase secrets set TELEGRAM_BOT_TOKEN=your-token
 npx supabase secrets set TELEGRAM_WEBHOOK_SECRET=$(openssl rand -hex 32)
-
 npx supabase functions deploy telegram-webhook --no-verify-jwt
-
-# Then register the webhook with Telegram (use the secret you just set)
 ```
-
-Also deploy `admin-users` and `send-push` if you haven’t already.

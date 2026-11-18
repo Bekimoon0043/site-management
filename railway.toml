@@ -1,6 +1,9 @@
+# This file is only used when Root Directory is empty.
+# For the web console, set Root Directory = "web" in the Railway UI
+# and let Railpack build from web/package.json (preferred).
+
 [build]
-builder = "DOCKERFILE"
-dockerfilePath = "Dockerfile"
+builder = "RAILPACK"
 
 [deploy]
 restartPolicyType = "ON_FAILURE"
